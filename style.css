@@ -1,0 +1,196 @@
+/*Estilo del body*/
+body {
+    font-family: 'Roboto Mono', monospace;
+    border: 1px;
+    border-color: black;
+    
+}
+
+/*Estilo de la barra de navegación*/
+.nav {
+    margin-bottom: 5em;
+    list-style: none;
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-radius: 0px;
+    border: 0px solid black;
+  }
+
+  .nav a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+    margin-top: 15px; 
+  }
+  
+  .nav a:hover {
+    color: rgb(56, 149, 255);
+    border-radius: 10px;
+
+  }
+  
+  /*Propiedades del responsive*/
+  @media all and (max-width:800px) {
+    .nav {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .nav {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .nav img {
+      margin-left: 40%;
+      margin-top: 20px;
+    }
+  
+    .nav a {
+      margin-top: 0px;
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav li:last-of-type a {
+      border-bottom: none;
+    }
+  
+  }
+  
+  /*Fin de estilo*/
+
+  /*Propiedades de intro*/
+.intro {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.intro ul li {
+    list-style: none;
+}
+
+.intro a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro .modificar {
+    font-weight: bold;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    color: chocolate;
+    
+     
+}
+
+ /*Fin de estilo*/
+
+  /*Propiedades de galería*/
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.galeria {
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    transition: all 1s;
+}
+
+.galeria:hover {
+    transform: scale(1.1);
+}
+
+ /*Fin de estilo*/
+ /*Propiedades de foto perfil en header*/
+.perfil {
+    border-radius: 100px;
+    margin: 10px;
+    height: 700px;
+    width: 700px;
+    transition: all 1s;
+    margin-bottom: 5em;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+footer {
+    text-align: center;
+
+}
+
+  /*Contacto*/
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  
+  .tituloformu {
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  /*Modifica todos los elementos tipo input dentro del formulario*/
+  .formulario .campos form input{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    
+    background: #eee;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  /*Modifica todos los elementos con id boton dentro del formulario*/
+  .formulario .campos form #boton {
+    border-radius: 3px;
+      background-color: rgb(56, 149, 255);
+      color: #ffffff;
+      border: 0;
+      padding: 15px 50px;
+      font-weight: bold;
+      margin-left: 10px;
+  }
+
+  /*Modificael textarea dentro del formulario*/
+  .formulario .campos textarea {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    resize: none;
+    background: #eee;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: deepskyblue;
+    border-radius: 50px;
+}
